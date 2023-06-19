@@ -28,6 +28,9 @@ GoToolchainInfo = provider(fields = [
     "linker_flags_static",
     "packer",
     "tags",
+    "sdk_tools",
+    "sdk_headers",
+    "sdk_srcs",
 ])
 
 def get_toolchain_cmd_args(toolchain: "GoToolchainInfo", go_root = True) -> "cmd_args":
